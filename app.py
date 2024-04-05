@@ -34,3 +34,6 @@ def predict():
 @app.route('/', methods=['GET'])
 def test():
       return jsonify({"text": "hello"})
+
+if __name__ == '__main__':
+    app.run(debug=True)
