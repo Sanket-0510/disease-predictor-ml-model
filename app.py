@@ -31,3 +31,6 @@ def predict():
     prediction = loaded_function(symptoms)
     return jsonify({"prediction": prediction})
     
+@app.route('/', methods=['GET'])
+def test():
+      return jsonify({"text": "hello"})
